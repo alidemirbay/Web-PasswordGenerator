@@ -19,16 +19,16 @@ function generatePassword() {
   passwordLength = parseInt(prompt("How many characters would you like in your password? Choose between 8 and 128"));
 
   //if user doesnt provide valid number
-  if (!passwordLength || passwordLength < 8 || passwordLength > 128) {
+  while (!passwordLength || passwordLength < 8 || passwordLength > 128) {
     alert("You need to enter a value between 8 an 128");
-    return;
-  } else {
-    //confirm if user wants number,symbol, lowercase or uppercase letter
-    confirmNumber = confirm("Will your password contain NUMBERS?");
-    confirmSymbol = confirm("Will your password  contain SYMBOLS?");
-    confirmUppercase = confirm("Will your password  contain UPPERCASE LETTERS?");
-    confirmLowercase = confirm("Will your password  contain LOWERCASE LETTERS?");
+    passwordLength = parseInt(prompt("How many characters would you like in your password? Choose between 8 and 128"))
   }
+  //confirm if user wants number,symbol, lowercase or uppercase letter
+  confirmNumber = confirm("Will your password contain NUMBERS?");
+  confirmSymbol = confirm("Will your password  contain SYMBOLS?");
+  confirmUppercase = confirm("Will your password  contain UPPERCASE LETTERS?");
+  confirmLowercase = confirm("Will your password  contain LOWERCASE LETTERS?");
+
 
   while (securePassword.length < passwordLength) {
     // if no criteria is selected
