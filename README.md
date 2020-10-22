@@ -30,3 +30,5 @@ Refactoring existing HTML and CSS codes to make the website more accessible
 -THEN the password is either displayed in an alert or written to the page
 
 ## Link to the website:
+
+https://alidemirbay.github.io/Web-PasswordGenerator/
