@@ -32,4 +32,4 @@ Creating an application that an employee can use to generate a random password b
 
 ## Link to the website:
 
-https://alidemirbay.github.io/Web-PasswordGenerator/
+https://alidemirbay.github.io/password-generator/
